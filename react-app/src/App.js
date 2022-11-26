@@ -10,13 +10,13 @@ function App() {
           //USER REGISTRATION 
           /*****************************************************************************/
           
-        /* fetch(`${url}/auth/`, {
+         /*fetch(`${url}/auth/`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                email: "mishil343@example.com",
+                email: "mishil_@example.com",
                 password: "12345678",
                 password_confirmation: "12345678"
           
@@ -66,7 +66,7 @@ function App() {
       /******************************************************************************/
       //GET ALL USERS
       /*****************************************************************************/
-      /*fetch(`${url}/users`, {
+      fetch(`${url}/users`, {
         method: 'GET',
         headers: header,
       })
@@ -76,20 +76,20 @@ function App() {
         })
         .then((data) => {
           console.log("users data",data)
-        })*/
+        })
       /******************************************************************************/
       //DIRECT MESSAGE 
       /*****************************************************************************/
-       /*fetch(`${url}/messages`, {
+       fetch(`${url}/messages`, {
           method: 'POST',
           headers:{
             'Content-Type': 'application/json',
             ...header
           },
           body: JSON.stringify({
-              receiver_id: "2914",
+              receiver_id: "2966",
               receiver_class: "User",
-              body: "Henlu(⁠◍⁠•⁠ᴗ⁠•⁠◍⁠)"
+              body: "(⁠◍⁠•⁠ᴗ⁠•⁠◍⁠)"
           }),
         })
           .then((res) => {
@@ -98,7 +98,7 @@ function App() {
           })
           .then((data) => {
             console.log("message data",data)
-          })  */
+          })  
       /******************************************************************************/
       //RETRIEVE DIRECT MESSAGE 
       /*****************************************************************************/
@@ -130,7 +130,7 @@ function App() {
         })*/
 
       /******************************************************************************/
-      //MESSAGE TO CHANNEL-PENDING
+      //MESSAGE TO CHANNEL
       /*****************************************************************************/
       /*fetch(`${url}/messages`, {
         method: 'POST',
